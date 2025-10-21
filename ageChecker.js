@@ -11,8 +11,14 @@ submitBtn.onclick = () => {
         response.textContent = "nah u too old for that shii unc"
 
     }
-    else{
+    else if (age.value <= 18 && age.value >= 1){
         response.textContent = "Ogbeni go carry your book jor!!!!"
+    }
+    else if(age.value == 0){
+        response.textContent = "nga u were just born"
+    }
+    else if(age.value <= 0){
+        response.textContent = "Bruh"
     }
     
 }
